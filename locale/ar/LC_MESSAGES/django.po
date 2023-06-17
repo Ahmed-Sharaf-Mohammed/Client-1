@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-17 19:24+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accounts\templates\accounts\index.html:40
+msgid "Home"
+msgstr "بيت"
+
+#: .\accounts\templates\accounts\index.html:41
+msgid "News"
+msgstr "أخبار"
+
+#: .\accounts\templates\accounts\index.html:42
+msgid "Contact"
+msgstr "اتصال"
+
+#: .\accounts\templates\accounts\index.html:45
+msgid "Welcome to my website!"
+msgstr "مرحبا بكم في موقع الويب الخاص بي!"
+
+#: .\accounts\templates\accounts\index.html:49
+msgid ""
+"Internet Explorer do not support sticky positioning and Safari requires a "
+"-webkit- prefix.News"
+msgstr ""
+"لا يدعم Internet Explorer تحديد المواقع الثابت ويتطلب Safari بادئة -webkit-"
+
+#: .\accounts\templates\accounts\index.html:50
+msgid ""
+"my name is ahmed, illum definitiones no quo, maluisset concludaturque et "
+"eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis "
+"evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur "
+"his ad. Eum no molestiae voluptatibus."
+msgstr ""
+"اسمي احمد لا اعرف التعريفات عنه كان يفضّل ان يختم و هو و الاخريات على ما هي "
+"عليه. لكن سبب فخر اليمين بك ، أنا أفعل أن كل واحد يطيح به. يجلب لنا عمل "
+"الطلاق و فليكن هذا الإعلان. لا تزعجه في الملذات."
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr "تم التثبيت بنجاح! تهانينا!"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"عرض <a href=\"https://docs.djangoproject.com/en/٪(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\"> ملاحظات الإصدار </a> لـ Django٪ "
+"(الإصدار) س"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
+msgstr ""
+"أنت تشاهد هذه الصفحة لأن <a "
+"href=\"https://docs.djangoproject.com/en/٪(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\"> DEBUG = صحيح </a> في ملف الإعدادات ولم "
+"تقم بتهيئة أي عناوين URL."
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:229
+msgid "Django Documentation"
+msgstr "توثيق جانغو"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr "الموضوعات والمراجع & أمبير ؛ كيف ل"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr "البرنامج التعليمي: تطبيق الاقتراع"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Get started with Django"
+msgstr "ابدأ مع Django"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:247
+msgid "Django Community"
+msgstr "مجتمع Django"
+
+#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr "تواصل أو احصل على مساعدة أو ساهم"

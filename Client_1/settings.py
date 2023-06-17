@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import posixpath
+from re import LOCALE
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
+#This is an app that handles user authentication and management, including login, registration, and user profiles.
 INSTALLED_APPS = [
     # Add your apps here to enable them
     'django.contrib.admin',
@@ -37,26 +39,32 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts', #This is an app that handles user authentication and management, including login, registration, and user profiles.
+    'third_party_app',
+    'accounts', 
+    'rosetta',
 
 ]
 
 # Middleware framework
 # https://docs.djangoproject.com/en/2.1/topics/http/middleware/
+# https://docs.djangoproject.com/en/4.2/topics/i18n/translation/#how-django-discovers-language-preference
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'Client_1.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
+# https://docs.djangoproject.com/en/4.2/topics/i18n/translation/#i18n-context-processor 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -67,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.i18n', 
                 'django.contrib.messages.context_processors.messages',
             ],
         },
@@ -103,11 +112,22 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+# https://docs.djangoproject.com/en/4.2/topics/i18n/translation/#how-django-discovers-language-preference
+LANGUAGES = [
+    ("ar", ("Arabic")),
+    ("en", ("English")),
+]
+
+LOCALE_PATHS = [    
+    os.path.join(BASE_DIR, 'locale/'),
+]
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

@@ -1,15 +1,59 @@
 {% load static %}
+{% load i18n %}
 
 <html>
 <head>
     <meta charset="UTF-8">                                                                      <!-- help you to write emoji and .... -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">                      <!-- Makes html flexible modulation with different devices  -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>   <!-- to use icons -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">                            <!-- icon beside title -->
     <title></title>                                                                             <!-- title of the tab -->
     <link rel="stylesheet" type="text/css" href="{% static 'accounts/css/accounts.css' %}">
 </head>
 
 <body>
+    {{trans}}
+
+
+
+    <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}">
+        <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+            <option value="{{ language.code }}" {% if language.code   ==    LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Go">
+    </form>
+
+
+
+
+    <div class="header"></div>
+    <ul>
+        <li><a class="active" href="#home">{% trans "Home" %}</a></li>
+        <li><a >{% trans "News" %}</a></li>
+        <li><a >{% trans "Contact" %}</a></li>
+    </ul>
+
+    <h1>{% trans "Welcome to my website!" %}</h1>
+
+    <h3>Sticky  Bar Example</h3>
+    <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+    <p><strong>Note:</strong> {% trans "Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.News" %}</p>
+    <p>{% trans "my name is ahmed, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus." %}</p>
+
+
+
+
+
+
 
     {{ content }}
     <h1>Ahmed Sharaf</h1>

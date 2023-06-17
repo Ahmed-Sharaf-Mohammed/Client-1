@@ -18,10 +18,24 @@ Including another URLconf
 
 # Uncomment next two lines to enable admin:
 from django.contrib import admin
-from django.urls import path, include
+from django.conf import settings
+from django.urls import path, include, re_path
+from django.conf.urls.i18n import i18n_patterns
+
 
 urlpatterns = [
+
+    path("i18n/", include("django.conf.urls.i18n")), #https://docs.djangoproject.com/en/4.2/topics/i18n/translation/#django.views.i18n.set_language ,
+]
+
+
+urlpatterns += i18n_patterns(
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
     path('', include('accounts.urls'))
-]
+)
+
+if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += [
+        re_path(r'^rosetta/', include('rosetta.urls'))
+    ]
