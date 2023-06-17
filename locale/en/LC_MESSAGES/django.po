@@ -8,52 +8,79 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 19:24+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-06-17 22:25+0300\n"
+"PO-Revision-Date: 2023-06-17 23:02+0000\n"
+"Last-Translator:   <Ahmed.Sharaf.Mohammed.Hassan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\accounts\templates\accounts\index.html:40
+#: .\accounts\templates\accounts\index.html:10
+msgid "شركة الفكر الصاعد للمقاولات"
+msgstr "Rising Thought Contracting Company"
+
+#: .\accounts\templates\accounts\index.html:17
+#| msgid "Contracting Company (R.T.C.C)"
+msgid "Rising Thought Contracting Company"
+msgstr "Rising Thought Contracting Company"
+
+#: .\accounts\templates\accounts\index.html:19
 msgid "Home"
 msgstr "Home"
 
-#: .\accounts\templates\accounts\index.html:41
-msgid "News"
-msgstr "News"
+#: .\accounts\templates\accounts\index.html:20
+msgid "About Us"
+msgstr "About Us"
 
-#: .\accounts\templates\accounts\index.html:42
-msgid "Contact"
-msgstr "Contact"
+#: .\accounts\templates\accounts\index.html:21
+msgid "Services/activities"
+msgstr "Services/activities"
+
+#: .\accounts\templates\accounts\index.html:22
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\accounts\templates\accounts\index.html:23
+msgid "Login"
+msgstr "Login"
+
+#: .\accounts\templates\accounts\index.html:24
+msgid "الــعربية"
+msgstr "Arabic"
+
+#: .\accounts\templates\accounts\index.html:44
+msgid "Welcome To Our Website"
+msgstr "Welcome To Our Website"
 
 #: .\accounts\templates\accounts\index.html:45
-msgid "Welcome to my website!"
-msgstr "Welcome to my website!"
+msgid "Contracting Company (R.T.C.C)"
+msgstr "Contracting Company (R.T.C.C)"
+
+#: .\accounts\templates\accounts\index.html:46
+msgid ""
+"We are a company specialized in the field of contracting of all kinds, "
+"including restoration and general repairs of buildings, residential and non-"
+"residential, repair and maintenance of roads and streets, and measured "
+"against that, all different types of contracting. Contact us to be close to "
+"a solution to the malfunction."
+msgstr ""
+"We are a company specialized in the field of contracting of all kinds, "
+"including restoration and general repairs of buildings, residential and non-"
+"residential, repair and maintenance of roads and streets, and measured "
+"against that, all different types of contracting. Contact us to be close to "
+"a solution to the malfunction."
+
+#: .\accounts\templates\accounts\index.html:48
+msgid "Hire Me"
+msgstr "Hire Me"
 
 #: .\accounts\templates\accounts\index.html:49
-msgid ""
-"Internet Explorer do not support sticky positioning and Safari requires a "
-"-webkit- prefix.News"
-msgstr ""
-"Internet Explorer do not support sticky positioning and Safari requires a "
-"-webkit- prefix.News"
-
-#: .\accounts\templates\accounts\index.html:50
-msgid ""
-"my name is ahmed, illum definitiones no quo, maluisset concludaturque et "
-"eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis "
-"evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur "
-"his ad. Eum no molestiae voluptatibus."
-msgstr ""
-"my name is ahmed, I don't know the definitions of him, he would have "
-"preferred to conclude and him, the other the stories as quo. But the reason "
-"why the right is proud of you, I do that every one overthrows him. It brings"
-" us the labor of repudiation and Let them be made to these ad. Do not "
-"trouble him with pleasures."
+msgid "Let's Talk"
+msgstr "Let's Talk"
 
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:7
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:220
@@ -105,3 +132,25 @@ msgstr "Django Community"
 #: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:248
 msgid "Connect, get help, or contribute"
 msgstr "Connect, get help, or contribute"
+
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgid ""
+#~ "Internet Explorer do not support sticky positioning and Safari requires a "
+#~ "-webkit- prefix.News"
+#~ msgstr ""
+#~ "Internet Explorer do not support sticky positioning and Safari requires a "
+#~ "-webkit- prefix.News"
+
+#~ msgid ""
+#~ "my name is ahmed, illum definitiones no quo, maluisset concludaturque et "
+#~ "eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis "
+#~ "evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur "
+#~ "his ad. Eum no molestiae voluptatibus."
+#~ msgstr ""
+#~ "my name is ahmed, I don't know the definitions of him, he would have "
+#~ "preferred to conclude and him, the other the stories as quo. But the reason "
+#~ "why the right is proud of you, I do that every one overthrows him. It brings"
+#~ " us the labor of repudiation and Let them be made to these ad. Do not "
+#~ "trouble him with pleasures."
