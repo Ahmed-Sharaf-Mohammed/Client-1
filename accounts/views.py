@@ -5,5 +5,7 @@ from mtranslate import translate
 
 
 def home(request):
-    
+    make_messages()
+    translate_po_file()
+    compile_translations()
     return render(request, 'accounts/index.html')
