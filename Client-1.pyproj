@@ -196,6 +196,8 @@
     <Folder Include="locale\" />
     <Folder Include="locale\ar\" />
     <Folder Include="locale\en\" />
+    <Folder Include="media\" />
+    <Folder Include="media\images\" />
     <Folder Include="static\" />
     <Folder Include="static\accounts\css\" />
     <Folder Include="static\admin\" />

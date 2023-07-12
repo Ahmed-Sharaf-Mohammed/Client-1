@@ -1,4 +1,4 @@
-import subprocess, os, argparse, polib, mtranslate
+import subprocess, os, argparse, polib
 from mtranslate import translate
 from django.core.management import call_command
 
