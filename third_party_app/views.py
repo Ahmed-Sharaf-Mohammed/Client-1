@@ -15,6 +15,7 @@ def make_messages():
 
 
 
+
 def translate_po_file():
     # Path to the .po file for translation to Arabic ('ar')
     ar_po_file_path = './locale/ar/LC_MESSAGES/django.po'
